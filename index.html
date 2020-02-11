@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunction()"> Hit me!</button>
+    <p id="demo"></p>
+
+
+
+
+
+    <h1 onclick="changeText(this)">change me!</h1>
+
+    <button onclick="displayDate()">Time is:</button>
+    <p id="time"></p>
+
+    <br>
+    <br>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse over me!!!</div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "BA-BA-BA-BAHHH!"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Over Me!!"
+        }
+
+        function displayDate() {
+            document.getElementById("time").innerHTML = Date();
+        }
+
+
+        function changeText(id) {
+            id.innerHTML = "Ooopss"
+        }
+
+        function myFunction() {
+            let text1 = "Hello world! ";
+            let text2 = "Shakalakabuuum";
+            let text3 = text1 + text2;
+            document.getElementById("demo").innerHTML = text3;
+        }
+
+        function process() {
+            var lbsVar = parseFloat(document.calculate.lbs.value);
+            var kgsVar = lbsVar / 2.2;
+            document.calculate.kgs.value = kgsVar;
+            console.log(process);
+        }
+    </script>
+
+</body>
+
+</html>
